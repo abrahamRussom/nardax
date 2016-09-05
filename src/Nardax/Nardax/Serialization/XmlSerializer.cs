@@ -11,6 +11,9 @@ namespace Nardax.Serialization
 
         public string Serialize(T value)
         {
+            xxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxxxxx
+                xxxxxxxxxxxxxxxxx
             using (var stream = new MemoryStream())
             {
                 var xs = new XmlSerializer(typeof(T));
