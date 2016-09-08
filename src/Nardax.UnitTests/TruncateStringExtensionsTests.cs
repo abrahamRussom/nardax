@@ -61,5 +61,13 @@ namespace Nardax.Tests
             var result = "käbbel".RepeatMe(3);
             Assert.AreEqual(expected, result);
         }
+[TestMethod]
+        public void RemoveWhiteChars()
+        {
+            var testString = "i\t will \tsurvive\t";
+            var result = testString.RemoveWhiteChars();
+            var expected = "iwillsurvive";
+            Assert.AreEqual(expected, result);
+        }
     }
 }
