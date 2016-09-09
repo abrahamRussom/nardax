@@ -50,5 +50,30 @@ namespace Nardax
         {
            return Regex.Replace(value, "\\s", "");
         }
+
+        public static string AddCharBetween(this string value, char c)
+        {
+            if(value == null)
+            {
+                return value;
+            }
+
+            var sb = new StringBuilder();
+
+            foreach (var x in value)
+            {
+                sb.Append(x);
+                sb.Append(c);
+            }
+
+            if(sb.Length > 1)
+            {
+                sb.Remove(sb.Length - 1, 1);
+            }
+
+            return sb.ToString();
+
+        }
+
     }
 }
