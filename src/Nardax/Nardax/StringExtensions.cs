@@ -33,7 +33,9 @@ namespace Nardax
             return value.Substring(0, maxLength);
         }
 
-        public static string RepeatMe(this string value, int times=5)
+       
+
+        public static string RepeatMe(this string value, int times = 5)
         {
             var sb = new StringBuilder();
             for (var i = 0; i < times; i++)
@@ -44,7 +46,7 @@ namespace Nardax
 
         }
 
-  public static string RemoveWhiteChars(this string value)
+        public static string RemoveWhiteChars(this string value)
         {
            return Regex.Replace(value, "\\s", "");
         }
